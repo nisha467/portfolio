@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nisha's Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="portf.css" />
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h2 style="color:#fff;">Nisha</h2>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>B.Tech Engineering Student</p>
+        <h1>Hi, I'm <span>Nisha Annepureddy</span></h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="C:\Users\priya\OneDrive\Desktop\Jagan\Nish.jpg" alt="Nisha" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I’m a B.Tech ECE student passionate about software development. A fast learner with a drive to improve.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('strengths')">Strengths</p>
+            <p class="tab-links" onclick="opentab('languages')">Languages</p>
+            <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+            <p class="tab-links" onclick="opentab('technology')">Technology</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Python</span></li>
+              <li><span>HTML & CSS</span></li>
+              <li><span>Django (Basics)</span></li>
+              <li><span>DBMS (Basics)</span></li>
+              <li><span>Git & GitHub</span></li>
+              <li><span>C (Basics)</span></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022–26</span> B.Tech at SVR Engineering College</li>
+              <li><span>2020–22</span> K.V.S.R Junior College</li>
+              <li><span>2020</span> SSC at Sri Vignana Bharathi School</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="strengths">
+            <ul>
+              <li>Self-Motivation</li>
+              <li>Positive Attitude</li>
+              <li>Confidence</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="languages">
+            <ul>
+              <li>Telugu</li>
+              <li>English</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="hobbies">
+            <ul>
+              <li>Reading Books</li>
+              <li>Watching TV</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="technology">
+            <ul>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificates -->
+  <div id="Certificates">
+    <div class="container">
+      <h1 class="sub-title">My Certificates</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/oracle.jpeg" alt="Oracle" />
+          <div class="layer">
+            <h3>Oracle</h3>
+            <p>Oracle University certification.</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/NPTEL.png" alt="NPTEL" />
+          <div class="layer">
+            <h3>NPTEL</h3>
+            <p>Computer Architecture (Swayam).</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Uipath.jpeg" alt="Uipath" />
+          <div class="layer">
+            <h3>Uipath</h3>
+            <p>Automation Tools Certificate.</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/gdsc.jpg" alt="GDSC" />
+          <div class="layer">
+            <h3>GDSC</h3>
+            <p>Google Developer Student Clubs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> annepureddynisha@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume"></i> 7075727989</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="resume/Nisha_Resume.pdf" class="btn btn2" download>Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2022–2026 Nisha Annepureddy</p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function openmenu() {
+      document.getElementById("sidemenu").style.right = "0";
+    }
+
+    function closemenu() {
+      document.getElementById("sidemenu").style.right = "-200px";
+    }
+
+    const scriptURL = 'https://script.google.com/macros/s/YOUR_SCRIPT_URL/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form?.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(() => { msg.innerHTML = ""; }, 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
+</body>
+</html>
