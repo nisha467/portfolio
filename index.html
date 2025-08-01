@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nisha's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <nav>
+        <h2 class="logo">Nisha</h2>
+        <div class="menu-icons">
+          <i class="fas fa-times" id="close-menu" onclick="closeMenu()"></i>
+          <i class="fas fa-bars" id="open-menu" onclick="openMenu()"></i>
+        </div>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-text">
+        <p>B.Tech Engineering Student</p>
+        <h1>Hi, I'm <span>Nisha Annepureddy</span></h1>
+      </div>
+    </div>
+  </header>
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="C:\Users\priya\OneDrive\Desktop\Jagan\Nish.jpg" height="400px",width="5px" alt="Nisha">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Energetic and passionate college student pursuing B.Tech, Electronics and Communication Engineering 
+            department in SVR Engineering College at JNTUA University. An enthusiastic fresher who is self-starter
+            and capable to use technical skills for the betterment of the organization. Aim to use knowledge continuously
+            learning and growing in the field of software development, a focused and goal-oriented engineering professional 
+            with zeal to make a winning career in software development.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('strengths')">Strengths</p>
+            <p class="tab-links" onclick="opentab('languages')">Languages</p>
+            <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+            <p class="tab-links" onclick="opentab('technology')">Technology</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Python Programming</span></li>
+              <li><span>HTML & CSS</span></li>
+              <li><span>Basics of Django</span></li>
+              <li><span>Basics of DBMS</span></li>
+              <li><span>Git & GitHub</span></li>
+              <li><span>Basics of C</span></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+               <li><span>2022-2026</span><br>B.Tech (ECE) at SVR Engineering College, Nandyal</li>
+              <li><span>2020-2022</span><br>Intermediate at K.V.S.R Junior College, Allagadda</li>
+              <li><span>2020</span><br>SSC at Sri Vignana Bharathi School, Allagadda</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="strengths">
+            <ul>
+              <li><span>Self-Motivation</span></li>
+              <li><span>Positive Attitude</span></li>
+              <li><span>Confidence</span></li>
+              <li><span>Positive thinking approach</span></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="languages">
+            <ul>
+              <li><span>Telugu</span></li>
+              <li><span>English</span></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="hobbies">
+            <ul>
+              <li><span>Reading Books</span></li>
+              <li><span>Watching TV</span></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="technology">
+            <ul>
+              <li><span>Figma</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificates, Contact, and Footer can stay same -->
+   <div id="Certificates">
+  <div class="container">
+      <h1 class="sub-title">My Certificates</h1>
+      <div class="work-list">
+          <div class="work">
+              <img src="C:\Users\priya\Downloads\oracle.jpeg" alt="Work 2">
+              <div class="layer">
+                  <h3>Oracle</h3>
+                  <p>This Certification belongs to Oracle course provided by Oracle University.</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+          </div>
+          <div class="work">
+              <img src="C:\Users\priya\Downloads\NPTEL.png" alt="Work 1">
+              <div class="layer">
+                  <h3>NPTEL</h3>
+                  <p>This Certification belongs to Computer Architecture provided by Swayam NPTEL</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+          </div>
+          <div class="work">
+              <img src="C:\Users\priya\Downloads\Uipath.jpeg" alt="Work 3">
+
+              <div class="layer">
+                  <h3>Uipath</h3>
+                  <p>This certificate belongs to Uipath which helps to build skills.</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+          </div>
+          <div class="work">
+            <img src="C:\Users\priya\Downloads\4bf4b15d-92be-487f-a901-c4f371414bdb.jpg" alt="Work 4">
+            <div class="layer">
+                <h3>GDSC</h3>
+                  <p>This Certification belongs to Google Developer Student Club where we can explore our knowledge.</p>
+                  <p></p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+
+
+
+  <!------------------ Contact -------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> annepureddynisha@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume"></i> 7075727989</p>
+          <div class="social-icons">
+            
+            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="C:\Users\priya\Downloads\Nisha_Resume.pdf" class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+     <p>&copy; 2022–2026 Nisha Annepureddy</p>
+
+    </div>
+  </div>
+
+  <script>
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function openMenu() {
+      document.getElementById("sidemenu").style.right = "0";
+    }
+
+    function closeMenu() {
+      document.getElementById("sidemenu").style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
